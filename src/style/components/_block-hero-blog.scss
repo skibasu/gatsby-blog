@@ -1,0 +1,52 @@
+.block-hero-blog {
+margin: 0;
+   @include mq(lg){
+  margin: 60px 0;
+
+  max-height: 380px;
+   }
+  &__container {
+    background: $pink;
+    @include mq(xxl) {
+      max-width: 1200px;
+    }
+  }
+  &__row {
+    @include mq(md) {
+      margin: 0 -50px;
+    }
+    @include mq(xl) {
+      max-height: 380px;
+    }
+  }
+  &__col-1 {
+    padding-top: 52px;
+    @include mq(xl) {
+      padding-left: 60px;
+    }
+  }
+  &__decorative {
+    margin-bottom: 30px;
+  }
+  &__col-description{
+     max-width:520px;
+     margin: 0 auto;
+     @include mq(lg){
+        max-width: 100%;
+     }
+  }
+  &__col-2 {
+    padding-top: 10px;
+  }
+  &__figure {
+    max-width: 100%;
+    @include mq(xl) {
+      max-width: 590px;
+      max-height: 389px;
+    }
+  }
+  svg{
+     display: block;
+     max-width:100%;
+  }
+}

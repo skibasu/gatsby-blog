@@ -1,0 +1,141 @@
+body {
+  font-family: $font-family-base;
+  color: $dark-grey;
+  font-size: 16px;
+  line-height: 24px;
+  @include mq(md) {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $dark-green;
+  font-weight: bold;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+p {
+  margin-bottom: 16px;
+  @include mq(lg) {
+    margin-bottom: 24px;
+  }
+}
+h1,
+.h1 {
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 42px;
+  @include mq(md) {
+    font-size: 62px;
+    line-height: 72px;
+    margin-bottom: 36px;
+  }
+}
+h2,
+.h2 {
+  font-size: 28px;
+  line-height: 38px;
+  @include mq(md) {
+    font-size: 46px;
+    line-height: 60px;
+    line-height: 123.1%;
+    margin-bottom: 32px;
+  }
+}
+h3,
+.h3 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.decorative {
+  font-size: 24px;
+  line-height: 24px;
+  font-family: $font-family-decoration;
+  color: $orange;
+
+  line-height: 24px;
+  margin-bottom: 8px;
+  @include mq(md) {
+    font-size: 32px;
+  }
+}
+.copyrights {
+  font-size: 12px;
+  line-height: 28px;
+}
+.page-header-title {
+  color: $orange;
+  margin-left: 8px;
+  margin-bottom: 0;
+  transform: translateY(7px);
+  font-size: 16px;
+  line-height: 1;
+  @include mq(md) {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+  @include mq(lg) {
+    font-size: 40px;
+  }
+}
+.category {
+  color: $orange;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  @include mq(md) {
+    font-size: 16px;
+  }
+}
+.read-more {
+  border: none;
+  background: none;
+  color: $orange;
+  font-size: 14px;
+  line-height: 16px;
+  &:disabled {
+    opacity: 0;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.wp-content {
+  h2 {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 34px;
+    @include mq(lg) {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 46px;
+    }
+  }
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 26px;
+    @include mq(lg) {
+      font-size: 20px;
+      line-height: 28px;
+      margin-bottom: 46px;
+    }
+  }
+}

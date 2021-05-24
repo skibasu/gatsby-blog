@@ -1,0 +1,30 @@
+.post-filters {
+  padding: 25px 0 28px;
+  @include mq(md) {
+    padding: 70px 0 34px;
+  }
+  @include mq(lg) {
+    padding: 25px 0 35px;
+  }
+  &__container {
+    
+    padding-bottom: 0;
+       @include mq(lg) {
+      border-bottom: 1px solid $grey;
+    }
+    @include mq(xxl) {
+      max-width: 1200px;
+    }
+  }
+  &__title {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    @include mq(md) {
+      margin-bottom: 47px;
+    }
+    @include mq(lg) {
+      margin-bottom: 44px;
+    }
+  }
+}

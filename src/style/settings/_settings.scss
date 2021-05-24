@@ -1,0 +1,51 @@
+// Colors
+
+$dark-green: #36545f;
+$orange: #f99685;
+$pink: #fffbfa;
+$dark-pink: #fdeeec;
+$mint: #a9ddd1;
+$error: #f36969;
+$success: #59bca4;
+$dark-grey: #859397;
+$mid-grey: #c2cbcd;
+$grey: #e0e4e5;
+$light-grey: #f3f6f7;
+
+$black: #000000;
+$white: #ffffff;
+
+$color-txt: $dark-grey;
+
+$theme-colors: (
+  "primary": $orange,
+);
+
+// Fonts
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
+
+$font-family-base: "Inter", sans-serif;
+$font-family-decoration: "Nanum Pen Script", cursive;
+// Z-index
+$z-modal: 1001;
+$z-header: 1000;
+// Breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 375px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1440px,
+  full: 1680px,
+);
+$container-max-widths: (
+  sm: 100%,
+  md: 100%,
+  lg: 100%,
+  xl: 100%,
+  xxl: 1300px,
+);
+$h: 700px;

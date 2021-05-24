@@ -1,0 +1,50 @@
+// unorder lists
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+// navigation
+.list-navigation {
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+    transform: translateY(25px);
+
+    &__firs-col {
+        @include mq(xl) {
+            margin-left: 142px;
+        }
+    }
+    &__col {
+        padding: 0 15px;
+    }
+    &__midddle-col {
+        @include mq(xl) {
+            padding-right: 92px;
+            padding-left: auto;
+        }
+        &--second {
+            padding-right: 47px;
+        }
+    }
+    &__last-col {
+        @include mq(xl) {
+            margin-right: 84px;
+        }
+    }
+    &__link {
+        color: $color-txt;
+        line-height: 1.8;
+        &:hover {
+            color: $orange;
+            text-decoration: none;
+        }
+    }
+    &__blog {
+        transform: none;
+    }
+    &--second {
+        transform: translate(112px, -14px);
+    }
+}

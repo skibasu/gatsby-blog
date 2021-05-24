@@ -1,0 +1,42 @@
+.posts-loop {
+    &__row {
+        margin: 0 -25px;
+    }
+    &__col {
+        margin-bottom: 27px;
+        padding: 0 25px;
+      
+        @media all and (max-width: 767px) {
+            flex: 0 0 375px;
+            max-width: 375px;
+            justify-content: center;
+        }
+
+        @include mq(lg) {
+            margin-bottom: 20px;
+        }
+
+    }
+    &__title {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 20px;
+        @include mq(md) {
+            margin-bottom: 47px;
+        }
+
+        @include mq(lg) {
+            margin-bottom: 43px;
+        }
+    }
+    &__row-bottom {
+        @include mq(md) {
+            transform: translateY(-18px);
+        }
+    }
+    &__more-wrapper {
+        @include mq(xl) {
+            transform: translateX(80px);
+        }
+    }
+}

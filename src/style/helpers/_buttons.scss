@@ -1,0 +1,102 @@
+.btn {
+  line-height: 1;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 16px;
+  min-width: 174px;
+  height: 56px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease;
+  &--primary {
+    border: 2px solid $orange;
+    background-color: $orange;
+    color: $white;
+    &:hover {
+      background-color: $white;
+      color: $orange;
+    }
+  }
+  &--secondary {
+    font-size: 16px;
+    color: $orange;
+    border: 2px solid $orange;
+    border-radius: 16px;
+    &:hover {
+      color: $white;
+      background-color: $orange;
+      svg path {
+        fill: $white;
+      }
+    }
+  }
+  &--app {
+    font-size: 14px;
+    min-width: 240px;
+  }
+  &__text {
+    margin-right: 25px;
+  }
+  &__icon:not(:last-child) {
+    margin-right: 6px;
+  }
+}
+.btn-close {
+  cursor: pointer;
+  display: flex;
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  svg path {
+    transition: all 0.2s ease;
+  }
+  &:hover {
+    svg path {
+      stroke: $black;
+    }
+  }
+  &:focus {
+    outline: none;
+    border: none;
+  }
+}
+.btn-filter {
+  transform: translateY(2px);
+  line-height: 1;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 4px 20px;
+
+  @include mq(lg) {
+    padding: 7px 48px;
+  }
+  color: $dark-grey;
+
+  background: transparent;
+
+  border: {
+    bottom: 2px solid transparent;
+    top: none;
+    left: none;
+    right: none;
+  }
+
+  border-radius: none;
+  &.isActive {
+    border: {
+      bottom: 2px solid $orange;
+    }
+  }
+
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}

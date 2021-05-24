@@ -1,0 +1,143 @@
+.modal {
+   transition: opacity .4s ease-in-out;
+opacity:0;
+    display: flex;
+    z-index: $z-modal;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(31, 31, 31, 0.3);
+    transform:translateX(-100%);
+
+
+    &__body {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background: $white;
+        padding: 25px;
+        width: 100%;
+        max-width: 375px;
+        min-height: 667px;
+        border-radius: 4px;
+        @include mq(md) {
+            min-height: 608px;
+            padding: 36px;
+            max-width: 512px;
+            width: 512px;
+        }
+    }
+    &__body-inner {
+        padding-top: 121px;
+        @include mq(md) {
+            padding-top: 58px;
+        }
+    }
+    .btn {
+        width: 100%;
+    }
+    &__close {
+        right: 0;
+        top: 0;
+    }
+    &__title,
+    h2 {
+        font-size: 36px;
+        line-height: 42px;
+        margin-bottom: 12px;
+        @include mq(md) {
+            font-size: 48px;
+            line-height: 60px;
+            margin-bottom: 28px;
+        }
+    }
+    &__list {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 32px;
+        @include mq(md) {
+            font-size: 18px;
+            line-height: 32px;
+            margin-bottom: 40px;
+        }
+    }
+    &__form {
+        @include mq(md) {
+            padding: 0 72px;
+        }
+
+        input {
+            margin-bottom: 20px;
+            text-align: center;
+            &::-webkit-input-placeholder {
+                /* Chrome/Opera/Safari */
+                text-align: center;
+            }
+            &::-moz-placeholder {
+                /* Firefox 19+ */
+                text-align: center;
+            }
+            &:-ms-input-placeholder {
+                /* IE 10+ */
+                text-align: center;
+            }
+            &:-moz-placeholder {
+                /* Firefox 18- */
+                text-align: center;
+            }
+        }
+    }
+    &__info-text {
+        margin-top: 10px;
+        font-size: 12px;
+        line-height: 20px;
+        margin-bottom: 0;
+        @include mq(md) {
+            margin-top: 20px;
+        }
+    }
+    &__elem {
+        &-1 {
+            left: 10px;
+            top: 37px;
+            @include mq(md) {
+                left: 0;
+                top: 0;
+            }
+            &--reverse {
+                width: 27px;
+                height: 16px;
+                svg {
+                    width: 100%;
+                    height: 100%;
+                }
+                @include mq(md) {
+                    width: 48px;
+                    height: 28px;
+                }
+
+                transform: rotate(90deg);
+                left: auto;
+                right: -10px;
+                top: 66%;
+            }
+        }
+        &-2 {
+            right: 0;
+            top: 28%;
+            &--reverse {
+                top: 42px;
+                right: auto;
+                @include mq(md) {
+                    left: 11px;
+                    top: 10px;
+                }
+            }
+        }
+    }
+}

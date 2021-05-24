@@ -1,0 +1,11 @@
+@mixin mq($vp) {
+    @media all and (min-width: map-get($grid-breakpoints, $vp)) {
+        @content;
+    }
+}
+
+@mixin mqh($vp, $vh) {
+    @media all and (min-width: map-get($grid-breakpoints, $vp)) and (min-height: $vh) {
+        @content;
+    }
+}
