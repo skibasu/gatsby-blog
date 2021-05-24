@@ -6,7 +6,7 @@ import Footer from './Footer/Footer';
 import ModalName from "./Modals/ModalName";
 import ModalEmail from "./Modals/ModalEmail";
 
-// import "../style/style.scss"
+import "../style/style.scss"
 import ScreenLock from "../helpers/screenLock";
 
 const Layout = ({ children }) => {
