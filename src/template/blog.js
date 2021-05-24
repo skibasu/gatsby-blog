@@ -8,6 +8,7 @@ import PostLoop from '../components/Blog/PostLoop';
 import LoadMorePosts from '../components/LoadMorePosts/LoadMorePosts'
 import Filters from '../components/Filters/Filters';
 
+
 const Blog = ({pageContext}) => {
    const data = Object.values(pageContext);
    const more = 3;
@@ -66,7 +67,6 @@ const Blog = ({pageContext}) => {
          <LoadMorePosts onClick={onloadMorePosts} disabled={!isMore} />
          </Layout>
    )
-
 }
 
 export default Blog;
