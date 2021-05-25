@@ -88,7 +88,7 @@ const ModalEmail = ({ refs, onClose, onOpenNameForm }) => {
                   {error && <p className="form-error" data-elem="error">{error}</p>}
                   <input className="js-input-1" placeholder="Your email" id="input1" data-elem="input" value={email} name="email" onChange={onChangeInput} />
                   <button className="btn btn--primary js-button-1" disabled={disabled} data-elem="submit" onClick={sendEmail}>Sign Up</button>
-                  <p className="modal__info-text">By signing up I agree to Bo’s <a href="#">Terms of Use </a>and <a href="#">
+                  <p className="modal__info-text">By signing up I agree to Bo’s <a href="/">Terms of Use </a>and <a href="/">
                      Privacy Policy</a>, and consent to receiving updates.</p>
                </form>
             </div>

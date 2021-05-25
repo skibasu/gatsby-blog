@@ -1,11 +1,9 @@
-import React,{useState, useEffect} from 'react';
+import React from 'react';
 import { Link } from 'gatsby';
 import dateformat from 'dateformat';
 import * as underscore from 'underscore';
 
 const PostSingle = ({ data, categories }) => {
-   const [isLoaded, setImageLoaded] = useState(false);
-
 
    return (
       <div className={`col col-12 col-md-4 posts-loop__col`}>

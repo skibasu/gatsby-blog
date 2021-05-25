@@ -1,10 +1,5 @@
 class ScreenLock {
-   constructor() {
-     
-   }
-   init() {
-     
-   }
+
    lock(){
 
       this.isLocked = false;

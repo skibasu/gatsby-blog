@@ -1,5 +1,4 @@
 import React,{useState,useEffect} from "react"
-import { graphql } from "gatsby"
 import * as underscore from 'underscore';
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -56,7 +55,6 @@ const Blog = ({pageContext}) => {
       setPost([...checkFilters()]);
    }, [filters])
 
-   // console.log('filters --- ',filters, 'posts ---- ' ,posts)
 
    return (
       <Layout>

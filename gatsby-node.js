@@ -9,7 +9,7 @@ exports.createPages = async ({ graphql, actions }) => {
       },
    } = await graphql(`
     query {
-      allWpPost {
+     allWpPost(sort: {fields: date, order: DESC}) {
     nodes {
       id
       title
