@@ -6,6 +6,7 @@ margin: 0;
   max-height: 380px;
    }
   &__container {
+     border-radius: 12px;
     background: $pink;
     @include mq(xxl) {
       max-width: 1200px;

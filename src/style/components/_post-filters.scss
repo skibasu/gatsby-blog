@@ -7,10 +7,10 @@
     padding: 25px 0 35px;
   }
   &__container {
-    
-    padding-bottom: 0;
+    border-bottom: 1px solid $grey;
+
        @include mq(lg) {
-      border-bottom: 1px solid $grey;
+      padding-bottom: 0;
     }
     @include mq(xxl) {
       max-width: 1200px;
