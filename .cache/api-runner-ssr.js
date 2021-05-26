@@ -9,7 +9,7 @@ var plugins = [{
     },{
       name: 'gatsby-plugin-manifest',
       plugin: require('/Users/fireart/Desktop/gatsby-blog/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
-      options: {"plugins":[],"name":"gatsby-starter-default","short_name":"starter","start_url":"/blog","background_color":"#663399","theme_color":"#663399","display":"minimal-ui","icon":"src/images/bitmaps/favicon-96x96.png","legacy":true,"theme_color_in_head":true,"cache_busting_mode":"query","crossOrigin":"anonymous","include_favicon":true,"cacheDigest":"b9ec67e227020c25032312033a2709b1"},
+      options: {"plugins":[],"name":"Bo blog","short_name":"Bo","start_url":"/blog","background_color":"#663399","theme_color":"#663399","display":"minimal-ui","icon":"src/images/bitmaps/favicon-96x96.png","legacy":true,"theme_color_in_head":true,"cache_busting_mode":"query","crossOrigin":"anonymous","include_favicon":true,"cacheDigest":"b9ec67e227020c25032312033a2709b1"},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [

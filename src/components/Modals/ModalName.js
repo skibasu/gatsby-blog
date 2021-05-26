@@ -24,14 +24,14 @@ const ModalEmail = ({ refs, onClose }) => {
     const email = localStorage.getItem("email")
 
     if (validate(name) && email) {
-      console.log("validate ok")
+ 
       setError("")
       setSuccess(false)
       setLoading(true)
       setDisabled(true)
 
       const response = await newsletter(email, name)
-      console.log(response)
+  
       if (response.status === 202) {
         setLoading(false)
         setSuccess(true)
@@ -49,7 +49,7 @@ const ModalEmail = ({ refs, onClose }) => {
         setError("Network error!")
       }
     } else {
-      console.log("validate error")
+
       setLoading(false)
       setSuccess(false)
       setError("Your name is to short!")

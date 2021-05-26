@@ -5,7 +5,6 @@ import PostInfo from '../components/PostInfo/PostInfo'
 import BreadCrumps from '../components/BreadCrumps/BreadCrumps'
 
 const Post = ({pageContext}) => {
-   console.log(pageContext.next.next)
    const next = pageContext.next;
    return (<>
 

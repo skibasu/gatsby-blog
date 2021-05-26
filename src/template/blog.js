@@ -9,7 +9,7 @@ import Filters from '../components/Filters/Filters';
 
 
 const Blog = ({pageContext}) => {
-   const data = Object.values(pageContext);
+   const data = Object.values(pageContext.allPosts);
    const more = 3;
    const pP = 9;
 
@@ -59,7 +59,7 @@ const Blog = ({pageContext}) => {
    return (
       <Layout>
          <SEO title="home" />
-         <BlockHeroBlog/>
+         <BlockHeroBlog data={pageContext.acf}/>
          <Filters onClick={onFilters} onReset={resetFilters} filters={filters} />
          <PostLoop posts={posts ? posts : []} postsPerPage={postsPerPage} categories={filters} /> 
          <LoadMorePosts onClick={onloadMorePosts} disabled={!isMore} />

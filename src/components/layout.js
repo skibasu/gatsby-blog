@@ -29,11 +29,9 @@ const Screen = new ScreenLock();
 
    useEffect(() => {
       if (stateEmail) {
-         console.log("show Email modal")
          modalElemEmail.current.style.opacity = "1"
          modalElemEmail.current.style.transform = "translateX(0)"
       } else if (!stateEmail) {
-         console.log("close Email modal")
          modalElemEmail.current.style.opacity = "0"
          setTimeout(
             () => (modalElemEmail.current.style.transform = "translateX(-100%)"),
@@ -44,11 +42,9 @@ const Screen = new ScreenLock();
    }, [stateEmail])
    useEffect(() => {
       if (stateName) {
-         console.log("show Name modal")
          modalElemName.current.style.opacity = "1"
          modalElemName.current.style.transform = "translateX(0)"
       } else if (!stateName) {
-         console.log("close Name modal")
          modalElemName.current.style.opacity = "0"
          setTimeout(
             () => (modalElemName.current.style.transform = "translateX(-100%)"),
