@@ -16,7 +16,7 @@ const rFooterMenu = (data) => {
 const FooterMenu = () =>
    <StaticQuery query={graphql`
    query {
-      allWpMenu(filter: {slug: {eq: "blog-menu"}}) {
+      allWpMenu(filter: {slug: {eq: "footer-menu"}}) {
          nodes {
             name
             menuItems {
