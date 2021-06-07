@@ -48,14 +48,7 @@ function Seo({ description, lang, meta, title, image }) {
          property: `og:image`,
          content: image || ''
         },
-         {
-            property: "og:image:width",
-            content: 300,
-         },
-         {
-            property: "og:image:height",
-            content: 150,
-         },
+        
         {
           property: `og:description`,
           content: metaDescription,

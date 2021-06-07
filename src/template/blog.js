@@ -9,6 +9,9 @@ import Filters from '../components/Filters/Filters';
 
 
 const Blog = ({pageContext}) => {
+   const image = pageContext.acf[0] && pageContext.acf[0].featuredImage && pageContext.acf[0].featuredImage.node && pageContext.acf[0].featuredImage.node.sourceUrl;
+   const title = pageContext.acf[0] && pageContext.acf[0].seo && pageContext.acf[0].seo.title;
+   const description = pageContext.acf[0] && pageContext.acf[0].seo && pageContext.acf[0].seo.metaDesc;
    const data = Object.values(pageContext.allPosts);
    const more = 3;
    const pP = 9;
@@ -58,7 +61,7 @@ const Blog = ({pageContext}) => {
 
    return (
       <Layout>
-         <SEO title="home" />
+         <SEO title={title} image={image} description={description}/>
          <BlockHeroBlog data={pageContext.acf}/>
          <Filters onClick={onFilters} onReset={resetFilters} filters={filters} />
          <PostLoop posts={posts ? posts : []} postsPerPage={postsPerPage} categories={filters} /> 

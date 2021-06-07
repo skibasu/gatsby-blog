@@ -17,6 +17,18 @@ exports.createPages = async ({ graphql, actions }) => {
             title
             }
             title
+            seo {
+               metaDesc,
+               title
+               opengraphImage {
+                  sourceUrl
+               }
+            }
+            featuredImage {
+               node {
+                  sourceUrl
+               }
+            }
          }
       }
      allWpPost(sort: {fields: date, order: DESC}) {
@@ -33,6 +45,13 @@ exports.createPages = async ({ graphql, actions }) => {
                }
                name
             }
+            }
+             seo {
+               metaDesc
+               title
+               opengraphImage {
+                  sourceUrl
+               }
             }
             categories {
             nodes {
