@@ -1,6 +1,5 @@
 const path = require(`path`)
 const { slash } = require(`gatsby-core-utils`)
-const fs = require("fs")
 exports.createPages = async ({ graphql, actions }) => {
    const { createPage } = actions
    // query content for WordPress posts

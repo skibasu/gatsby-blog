@@ -3,12 +3,16 @@ import Layout from "../components/layout"
 import PostNav from '../components/PostNav/PostNav'
 import PostInfo from '../components/PostInfo/PostInfo'
 import BreadCrumps from '../components/BreadCrumps/BreadCrumps'
+import SEO from "../components/seo"
 
 const Post = ({pageContext}) => {
    const next = pageContext.next;
+  const image =  pageContext.featuredImage.node.sourceUrl;
    return (<>
 
       <Layout>
+ 
+         <SEO title={pageContext.title} image={image}/>
          <BreadCrumps slugs={['http://localhost:3000/', '/', '/']} titles={['Home', 'Blog', pageContext.title]} />
          <article className="post-blog-single">
             <PostInfo data={pageContext} />
