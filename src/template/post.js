@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 
 const Post = ({pageContext}) => {
    const next = pageContext.next;
-  const image =  pageContext.featuredImage.node.sourceUrl;
+   const image = pageContext.featuredImage && pageContext.featuredImage.node && pageContext.featuredImage.node.sourceUrl;
    return (<>
 
       <Layout>
