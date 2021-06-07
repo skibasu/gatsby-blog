@@ -66,7 +66,7 @@ function Seo({ description, lang, meta, title, image }) {
         },
         {
           name: `twitter:card`,
-          content: image || '',
+          content: image || 'i',
         },
         {
           name: `twitter:creator`,
