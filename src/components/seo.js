@@ -38,7 +38,7 @@ function Seo({ description, lang, meta, title, image }) {
       meta={[
         {
           name: `description`,
-          content: metaDescription,
+          content: description,
         },
         {
           property: `og:title`,
@@ -51,7 +51,7 @@ function Seo({ description, lang, meta, title, image }) {
         
         {
           property: `og:description`,
-          content: metaDescription,
+          content: description,
         },
         {
           property: `og:type`,
@@ -59,7 +59,7 @@ function Seo({ description, lang, meta, title, image }) {
         },
         {
           name: `twitter:card`,
-          content: image || 'i',
+          content: image || '',
         },
         {
           name: `twitter:creator`,
@@ -71,7 +71,7 @@ function Seo({ description, lang, meta, title, image }) {
         },
         {
           name: `twitter:description`,
-          content: metaDescription,
+          content: description,
         },
       ].concat(meta)}
     />
